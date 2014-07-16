@@ -1,0 +1,15 @@
+---
+- name: "create user"
+  user:
+    name: "{{user_name}}"
+    password: "{{user_password}}"
+    groups: "vboxusers"
+    shell: "/bin/zsh"
+- name: "create user dirs"
+  file:
+    dest: "/home/{{user_name}}/{{item}}"
+    state: "directory"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"
+  with_items:
+    - screenshots

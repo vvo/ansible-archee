@@ -1,0 +1,25 @@
+---
+- include: configure-pacman.yml
+- include: add-resume-hook.yml
+- include: configure-dhcpcd.conf.yml
+- include: configure-keyboard.yml
+- include: install-yaourt.yml
+- include: update-repositories.yml
+- name: find packages from base-devel
+  shell: "pacman -Qg base-devel | awk '{print $2}'"
+  register: group_packages
+- include: ../../../tasks/yaourt-S.yml
+  vars:
+    packages:
+      - "{{system_packages}}"
+      - "{{group_packages.stdout_lines}}"
+      - "{{fonts_packages}}"
+      - "{{compression_packages}}"
+      - "{{virtualization_packages}}"
+      - "{{office_packages}}"
+      - "{{wm_packages}}"
+      - "{{dev_packages}}"
+      - "{{file_manager}}"
+- include: enable-services.yml
+- include: install-global-npm-packages.yml
+- include: configure-refind.yml

@@ -1,0 +1,16 @@
+---
+- name: add user to sudoers
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    line: "{{user_name}} ALL=(ALL) ALL"
+- name: configure sudo timeout
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    line: "Defaults:{{user_name}} timestamp_timeout=200"
+- name: "disable per terminal sudo"
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    line: "Defaults !tty_tickets"

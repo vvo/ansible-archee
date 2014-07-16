@@ -1,0 +1,21 @@
+{
+	"installed_packages":
+	[
+		"DevDocs",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"GoSublime",
+		"HTML Snippets",
+		"HTML5",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"MoveTab",
+		"SideBarEnhancements",
+		"sublime-github",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"Theme - Soda",
+		"WakaTime"
+	]
+}

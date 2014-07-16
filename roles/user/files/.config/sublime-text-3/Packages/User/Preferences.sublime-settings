@@ -1,0 +1,45 @@
+{
+	"auto_indent": true,
+	"color_scheme": "Packages/User/Chrome DevTools (SL).tmTheme",
+	"detect_indentation": true,
+	"file_exclude_patterns":
+	[
+		"*.log",
+		"*.min.js"
+	],
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		".sass-cache",
+		".git",
+		"public",
+		"bower_components",
+		"packer_cache",
+		".vagrant"
+	],
+	"font_face": "Inconsolata",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"DocBlockr",
+		"Vintage",
+		"Git",
+		"sublime-github",
+		"GitGutter",
+		"Theme - Soda",
+		"SublimeLinter"
+	],
+	"phoenix_color_darkblue": true,
+	"rulers":
+	[
+		78,
+		110
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"smart_indent": true,
+	"spell_check": false,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

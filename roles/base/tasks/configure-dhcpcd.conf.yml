@@ -1,0 +1,5 @@
+---
+- name: "configure dhcpcd.conf"
+  lineinfile:
+    dest: "/etc/dhcpcd.conf"
+    line: "nohook resolv.conf"

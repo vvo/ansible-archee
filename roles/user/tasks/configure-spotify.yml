@@ -1,0 +1,15 @@
+---
+- name: configure spotify autologin
+  lineinfile:
+    dest: /home/{{user_name}}/.config/spotify/prefs
+    state: present
+    line: "autologin.blob=\"{{spotify_autologin}}\""
+    regexp: "^autologin\\.blob"
+    backrefs: yes
+- name: configure spotify lastfm login
+  lineinfile:
+    dest: /home/{{user_name}}/.config/spotify/Users/wouaren-user/prefs
+    state: present
+    line: "lastfm.pass=\"{{spotify_lastfm_pass}}\""
+    regexp: "^lastfm\\.pass"
+    backrefs: yes

@@ -1,0 +1,10 @@
+[
+  { "keys": ["ctrl+alt+r"], "command": "reveal_in_side_bar" },
+  { "keys": ["ctrl+space"], "command": "auto_complete" },
+  { "keys": ["ctrl+alt+d"], "command": "dev_docs_search_from_input"},
+  { "keys": ["shift+super+f"], "command": "toggle_distraction_free" },
+  { "keys": ["ctrl+shift+g"], "command": "markdown_preview",           "args": {
+              "target": "browser",
+              "parser": "github"
+          } }
+]

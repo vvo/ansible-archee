@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=ClipIt
+Icon=gtk-paste
+Exec=clipit
+Terminal=false
+Type=Application

@@ -1,0 +1,20 @@
+---
+- name: "copy user files"
+  synchronize:
+    src: "../files/"
+    dest: "/home/{{user_name}}/"
+    rsync_opts: "-z"
+- name: "copy original Dropbox/ and Dev/"
+  synchronize:
+    src: "{{item}}"
+    dest: "/home/{{user_name}}/"
+    rsync_opts: "-z"
+  with_items:
+    - "/home/{{user_name}}/Dev"
+    - "/home/{{user_name}}/Dropbox"
+  when: big_dirs == "Yes"
+- name: ensure ownership
+  file:
+    path: "/home/{{user_name}}"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"

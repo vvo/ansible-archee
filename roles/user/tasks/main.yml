@@ -1,0 +1,8 @@
+---
+- include: create-user.yml
+- include: autologin.yml
+- include: configure-sudo.yml
+- include: copy-files.yml
+- include: copy-private-ssh-key.yml
+- include: configure-spotify.yml
+- include: go.yml

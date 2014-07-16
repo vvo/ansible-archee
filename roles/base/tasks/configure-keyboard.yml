@@ -1,0 +1,5 @@
+---
+- name: "configure keyboard" # using setxkbmap in ~/.xinitrc is not sufficient when using usb keyboards
+  copy:
+    src: "../files/10-keyboard-layout.conf"
+    dest: "/etc/X11/xorg.conf.d/10-keyboard-layout.conf"

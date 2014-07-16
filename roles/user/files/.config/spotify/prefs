@@ -1,0 +1,10 @@
+audio.sync_bitrate=320000
+audio.crossfade=true
+audio.play_bitrate=320000
+core.csrf_tokens="*.spotify.com|4ccc2ccbfe010af62cd6717fb323233a|646035477"
+core.flash_version=11
+autologin.blob=""
+autologin.canonical_username="wouaren"
+autologin.username="wouaren"
+core.clock_delta=0
+language="en"

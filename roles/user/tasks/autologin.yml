@@ -1,0 +1,10 @@
+---
+# see https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
+- name: "create required dir structure"
+  file:
+    dest: "/etc/systemd/system/getty@tty1.service.d/"
+    state: "directory"
+- name: "configure autologin"
+  template:
+    src: "autologin.conf.j2"
+    dest: "/etc/systemd/system/getty@tty1.service.d/autologin.conf"

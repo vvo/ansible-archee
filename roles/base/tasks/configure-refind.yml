@@ -1,0 +1,7 @@
+---
+- name: "configure refind timeout"
+  lineinfile:
+    dest: /boot/EFI/refind/refind.conf
+    state: present
+    line: "timeout -1"
+    regexp: "^timeout "

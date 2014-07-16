@@ -1,0 +1,48 @@
+---
+- name: "download pacman mirror list"
+  get_url:
+    url: "https://www.archlinux.org/mirrorlist/?country=FR&country=DE&country=IE&country=LU&country=CH&country=GB&protocol=http&ip_version=4&ip_version=6&use_mirror_status=on"
+    dest: "/etc/pacman.d/mirrorlist"
+- name: "uncomment `#Server` in pacman mirror list"
+  replace:
+    dest: /etc/pacman.d/mirrorlist
+    regexp: '^#Server'
+    replace: 'Server'
+- name: "add multilib"
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "[multilib]"
+    regexp: "^\\[multilib\\]"
+    insertafter: "^#\\[multilib\\]"
+- name: "add multilib (cont)"
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "Include = /etc/pacman.d/mirrorlist"
+    insertafter: "^\\[multilib\\]"
+    regexp: "Include = /etc/pacman.d/mirrorlist"
+- name: "add infinality-bundle key"
+  shell: "pacman-key -r 962DDE58 && pacman-key --lsign-key 962DDE58"
+- name: "add infinality-bundle" # https://wiki.archlinux.org/index.php/Unofficial_user_repositories#infinality-bundle
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "[infinality-bundle]"
+- name: "add infinality-bundle (cont)"
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "Server = http://bohoomil.com/repo/$arch"
+    insertafter: "^\\[infinality\\-bundle\\]"
+- name: "add infinality-bundle-fonts" # https://wiki.archlinux.org/index.php/Unofficial_user_repositories#infinality-bundle
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "[infinality-bundle-fonts]"
+- name: "add infinality-bundle-fonts (cont)"
+  lineinfile:
+    dest: "/etc/pacman.conf"
+    state: "present"
+    line: "Server = http://bohoomil.com/repo/fonts"
+    insertafter: "^\\[infinality\\-bundle\\-fonts\\]"

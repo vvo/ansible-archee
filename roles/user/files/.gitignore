@@ -1,0 +1,10 @@
+node_modules
+bower_components
+*.min.js.report.txt
+TODO
+packer_cache
+*.iso
+*.ovf
+*.vmdk
+*.box
+.vagrant

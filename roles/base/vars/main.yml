@@ -1,0 +1,121 @@
+---
+system_packages:
+  - curl
+  - htop
+  - nethogs
+  - iotop
+  - powertop
+  - git
+  - vim
+  - sudo
+  - debian-whois-mkpasswd # `mkpasswd` bin
+  - zsh
+  - oh-my-zsh-git
+  - downgrade
+  - autojump
+  - udiskie
+  - avahi
+  - xbindkeys
+  - tlp # https://wiki.archlinux.org/index.php/TLP
+  - acpi
+  - acpid
+  - tp_smapi
+  - acpi_call
+  - xorg-xbacklight
+  - xorg-xsetroot
+  - alsa-utils
+  - alsa-plugins
+  - redshift-minimal
+  - volnoti
+  - keychain
+  - rsync
+  - xf86-input-synaptics
+  - xf86-video-intel
+  - refind-efi # https://wiki.archlinux.org/index.php/REFInd
+  - ntp
+  - roxterm
+  - ansible
+  - libnotify
+  - ethtool
+  - smartmontools
+  - polkit
+compression_packages:
+  - zip
+  - unzip
+  - unrar
+virtualization_packages:
+  - virtualbox
+  - virtualbox-host-modules
+  - packer-io
+  - docker
+  - vagrant
+office_packages:
+  - dropbox
+  - simple-scan
+  - google-chrome-beta
+  - arandr
+  - kingsoft-office
+  - clipit
+  - vlc
+  - spotify
+  - hplip
+  - brscan4 # brother scan driver
+  - gnome-calculator
+  - irssi
+file_manager:
+  - thunar
+  - gvfs
+  - gvfs-smb
+  - polkit-gnome
+  - xfce4-panel
+  - tumbler
+  - thunar-volman
+  - thunar-archive-plugin
+  - thunar-media-tags-plugin
+  - thunar-dropbox
+  - thunar-shares-plugin
+  - thunar-vcs-plugin
+wm_packages:
+  - xorg-server # https://wiki.archlinux.org/index.php/Xorg#Installation
+  - xorg-xinit
+  - x11-ssh-askpass
+  - i3-wm
+  - j4-dmenu-desktop
+  - i3lock
+  - i3status
+  - dex
+  - dunst
+  - mediterraneannight-theme
+  - faenza-icon-theme
+  - lxappearance
+  - xorg-xmodmap
+  - xorg-xdpyinfo
+  - scrot
+fonts_packages: # most of theses fonts will provide you good fonts on chrome rendering etc..
+  - otf-inconsolatazi4-ibx # programming font
+  - artwiz-fonts
+  - font-bh-ttf
+  - font-bitstream-speedo
+  - sdl_ttf
+  - ttf-bitstream-vera
+  - ttf-cheapskate
+  - ttf-ms-fonts
+  - ttf-vista-fonts
+  # - infinality-bundle
+  - freetype2-infinality-ultimate
+  - fontconfig-infinality-ultimate
+  - cairo-infinality-ultimate
+  - ttf-droid-ib
+  - ttf-opensans-ib
+  - ttf-ubuntu-font-family-ib
+  # - infinality-bundle-fonts # https://wiki.archlinux.org/index.php/Infinality-bundle+fonts
+  - ibfonts-meta-base
+  - ibfonts-meta-extended
+  - otf-brill
+  - otf-neris
+  - ttf-aller
+  - ttf-envy-code-r
+dev_packages:
+  - sublime-text-nightly
+  - nodejs
+  - go

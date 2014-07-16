@@ -1,0 +1,22 @@
+# Increase volume
+"sh $HOME/bin/sound.sh up"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume
+
+# Decrease volume
+"sh $HOME/bin/sound.sh down"
+    m:0x0 + c:122
+    XF86AudioLowerVolume
+
+# Toggle mute
+"sh $HOME/bin/sound.sh mute"
+    m:0x0 + c:121
+    XF86AudioMute
+
+"sh $HOME/bin/brightness.sh inc"
+    m:0x0 + c:233
+    XF86MonBrightnessUp
+
+"sh $HOME/bin/brightness.sh dec"
+    m:0x0 + c:232
+    XF86MonBrightnessDown

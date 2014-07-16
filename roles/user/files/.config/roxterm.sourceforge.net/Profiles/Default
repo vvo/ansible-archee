@@ -1,0 +1,11 @@
+[roxterm profile]
+colour_scheme=Smyck
+hide_menubar=1
+always_show_tabs=1
+show_add_tab_btn=1
+show_resize_grip=1
+font=Inconsolatazi4 14
+maximise=1
+scrollback_lines=20000
+scroll_on_output=0
+scroll_on_keystroke=1

@@ -1,0 +1,48 @@
+[user]
+  name = vvo
+  email = vincent.voyer@gmail.com
+[color]
+  ui = auto
+[giggle]
+  main-window-maximized = true
+  main-window-geometry = 463x279+0+47
+  history-view-vpane-position = 529
+  main-window-view = FileView
+  file-view-vpane-position = 678
+[alias]
+  gll = git rev-parse HEAD
+  gl = git pull
+  standup = log --all --since yesterday --oneline --author vvo
+  st = status
+  stp = status --porcelain
+  ci = commit
+  br = branch
+  co = checkout
+  rz = reset --hard HEAD
+  unstage = reset HEAD
+  sl = stash list
+  ss = stash save
+  sp = stash pop
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ru = remoteupdate
+  trackingbranch = "!git branch -vv | grep '^\\*' | sed -e 's/^\\*\\s\\+[^ ]\\+\\s\\+[0-9a-f]\\+\\s\\+\\[\\([^]:]\\+\\).*\\].*/\\1/'"
+  lpush = "!git --no-pager log $(git trackingbranch)..HEAD --oneline"
+  lpull = "!git --no-pager log HEAD..$(git trackingbranch) --oneline"
+  whatsnew = "!git diff $(git trackingbranch)...HEAD"
+  whatscoming = "!git diff HEAD...$(git trackingbranch)"
+  currentbranch = "!git branch | grep \"^\\*\" | cut -d \" \" -f 2"
+  graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --decorate
+[core]
+  editor = "vim"
+  excludesfile = /home/vvo/.gitignore
+[github]
+  user = vvo
+  token = c1d063410e03a68cd05a204b11e8c75fb7856a51
+[gui]
+  editor = "s --wait"
+[push]
+  default = current
+[pull]
+	default = current
