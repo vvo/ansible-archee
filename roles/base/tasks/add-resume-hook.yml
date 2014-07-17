@@ -1,11 +1,13 @@
 ---
-- name: "add resume hook to mkinitcpio.conf" # https://wiki.archlinux.org/index.php/Suspend_and_Hibernate#Recreate_initial_ramdisk
+# https://wiki.archlinux.org/index.php/Suspend_and_Hibernate#Recreate_initial_ramdisk
+# allows hibernate/resume to be used
+- name: "add resume hook to mkinitcpio.conf"
   lineinfile:
     dest: "/etc/mkinitcpio.conf"
     line: 'HOOKS="base resume udev\1'
     regexp: '^HOOKS="base udev(.*)$'
     backrefs: "yes"
-  register: hook_added
+  register: "hook_added"
 - name: "rebuild kernel"
-  shell: mkinitcpio -p linux
-  when: hook_added|changed
+  shell: "mkinitcpio -p linux"
+  when: "hook_added|changed"

@@ -1,4 +1,7 @@
 ---
+# refind is the grub-like for uefi motherboards
+# https://wiki.archlinux.org/index.php/REFInd
+# setting timeout to -1 means "do not display the menu"
 - name: "configure refind timeout"
   lineinfile:
     dest: /boot/EFI/refind/refind.conf

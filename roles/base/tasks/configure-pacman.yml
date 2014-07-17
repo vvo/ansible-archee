@@ -1,11 +1,13 @@
 ---
+# Download an up-to-date pacman mirror list for Europe
+# add multilib and infinality (fonts) repositories
 - name: "download pacman mirror list"
   get_url:
     url: "https://www.archlinux.org/mirrorlist/?country=FR&country=DE&country=IE&country=LU&country=CH&country=GB&protocol=http&ip_version=4&ip_version=6&use_mirror_status=on"
     dest: "/etc/pacman.d/mirrorlist"
 - name: "uncomment `#Server` in pacman mirror list"
   replace:
-    dest: /etc/pacman.d/mirrorlist
+    dest: "/etc/pacman.d/mirrorlist"
     regexp: '^#Server'
     replace: 'Server'
 - name: "add multilib"

@@ -5,9 +5,9 @@
     state: "started"
     enabled: "yes"
   with_items:
-    - tlp
-    - tlp-sleep
-    - ntpd
-    - systemd-readahead-collect
-    - systemd-readahead-replay
-    - dhcpcd
+    - "tlp"
+    - "tlp-sleep"
+    - "ntpd"
+    - "systemd-readahead-collect"
+    - "systemd-readahead-replay"
+    - "dhcpcd"

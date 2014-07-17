@@ -1,4 +1,7 @@
 ---
+# dhcpcd service can be very slow at startup,
+# mainly because it gets and recreates the resolv.conf from the router
+# https://wiki.archlinux.org/index.php/Resolv.conf#Modify_the_dhcpcd_config
 - name: "configure dhcpcd.conf"
   lineinfile:
     dest: "/etc/dhcpcd.conf"

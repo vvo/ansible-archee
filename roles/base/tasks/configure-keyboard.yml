@@ -1,5 +1,10 @@
 ---
-- name: "configure keyboard" # using setxkbmap in ~/.xinitrc is not sufficient when using usb keyboards
+# I use a qwerty keyboard to write code, english and french sentences
+# So I use us altrg-intl
+# I have an usb keyboard along the laptop keyboard
+# using setxkbmap in ~/.xinitrc is not sufficient when using usb keyboards
+# you need to set it in xorg configuration
+- name: "configure keybozard"
   copy:
     src: "../files/10-keyboard-layout.conf"
     dest: "/etc/X11/xorg.conf.d/10-keyboard-layout.conf"

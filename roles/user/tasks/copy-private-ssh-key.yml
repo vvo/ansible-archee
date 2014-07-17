@@ -1,5 +1,5 @@
 ---
-- name: copy private ssh key
+- name: "copy private ssh key"
   copy:
     content: "{{user_ssh_private_key}}"
     dest: "/home/{{user_name}}/.ssh/id_rsa"

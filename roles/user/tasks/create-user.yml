@@ -12,4 +12,4 @@
     owner: "{{user_name}}"
     group: "{{user_name}}"
   with_items:
-    - screenshots
+    - "screenshots"

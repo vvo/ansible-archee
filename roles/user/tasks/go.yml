@@ -6,5 +6,5 @@
   sudo: "yes"
   sudo_user: "{{user_name}}"
   with_items:
-    - c9s/gomon
-    - codegangsta/gin
+    - "c9s/gomon"
+    - "codegangsta/gin"

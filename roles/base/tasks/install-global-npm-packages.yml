@@ -5,4 +5,4 @@
     global: "yes"
     state: "present"
   with_items:
-    - http-server
+    - "http-server"
