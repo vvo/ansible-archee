@@ -39,15 +39,17 @@ HISTTIMEFORMAT='%F %T '
 PROMPT_COMMAND='history -a; history -n'
 unsetopt correct_all
 
-pkill -f syndaemon
-syndaemon -d -t -i 0.2 -K
-synclient HorizTwoFingerScroll=1
-synclient MaxTapTime=0
+# contrary to x230, x240 touchpad seems to work out of the box now
+#pkill -f syndaemon
+#syndaemon -d -t -i 0.2 -K
+#synclient HorizTwoFingerScroll=1
+#synclient MaxTapTime=0
 
 alias thunar="dbus-launch thunar"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 alias scrot="escrotum"
+alias s="subl3"
 
 [[ -s /etc/profile.d/autojump.zsh ]] && source /etc/profile.d/autojump.zsh
 source /etc/profile.d/vte.sh
