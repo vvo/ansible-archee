@@ -46,10 +46,12 @@ compression_packages:
   - "unrar"
 virtualization_packages:
   - "virtualbox"
+  - "virtualbox-ext-oracle"
   - "virtualbox-host-modules"
   - "packer-io"
   - "docker"
   - "vagrant"
+  - "net-tools"
 office_packages:
   - "dropbox"
   - "simple-scan"
@@ -64,6 +66,8 @@ office_packages:
   - "brscan4"
   - "gnome-calculator"
   - "transmission-gtk"
+  - "foxitreader"
+  - "geeqie"
 file_manager:
   - "thunar"
   - "gvfs"

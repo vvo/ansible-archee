@@ -1,0 +1,6 @@
+---
+# X240 as two sound cards, we force the "PCH" one to be activated by default
+- name: "configure sound"
+  copy:
+    src: "../files/alsa-base.conf"
+    dest: "/etc/modprobe.d/alsa-base.conf"

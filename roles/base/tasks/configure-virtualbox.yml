@@ -1,0 +1,6 @@
+---
+# add some modules to load automatically
+- name: "configure virtualbox"
+  copy:
+    content: "vboxdrv\\nvboxnetadp\\nvboxnetflt\\nvboxpci"
+    dest: "/etc/modules-load.d/virtualbox.conf"

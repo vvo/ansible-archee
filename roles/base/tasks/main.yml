@@ -4,6 +4,8 @@
 - include: configure-dhcpcd.conf.yml
 - include: configure-tlp.yml
 - include: configure-keyboard.yml
+- include: configure-sound.yml
+- include: configure-virtualbox.yml
 - include: install-yaourt.yml
 - include: update-repositories.yml
 - name: find packages from base-devel

@@ -39,10 +39,9 @@ HISTTIMEFORMAT='%F %T '
 PROMPT_COMMAND='history -a; history -n'
 unsetopt correct_all
 
-# contrary to x230, x240 touchpad seems to work out of the box now
-#pkill -f syndaemon
-#syndaemon -d -t -i 0.2 -K
-#synclient HorizTwoFingerScroll=1
+pkill -f syndaemon
+syndaemon -d -t -i 0.2 -K -R
+synclient HorizTwoFingerScroll=1
 #synclient MaxTapTime=0
 
 alias thunar="dbus-launch thunar"
