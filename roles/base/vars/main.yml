@@ -68,6 +68,8 @@ office_packages:
   - "transmission-gtk"
   - "foxitreader"
   - "geeqie"
+  - "libreoffice-writer"
+  - "todotxt"
 file_manager:
   - "thunar"
   - "gvfs"
@@ -128,3 +130,4 @@ dev_packages:
   - "sublime-text-nightly"
   - "nodejs"
   - "go"
+  - "git-cola"

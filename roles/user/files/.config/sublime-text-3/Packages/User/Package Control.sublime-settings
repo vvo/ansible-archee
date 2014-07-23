@@ -2,9 +2,7 @@
 	"installed_packages":
 	[
 		"DevDocs",
-		"DocBlockr",
 		"Git",
-		"GitGutter",
 		"GoSublime",
 		"HTML Snippets",
 		"HTML5",
@@ -14,8 +12,6 @@
 		"SideBarEnhancements",
 		"sublime-github",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
-		"Theme - Soda",
-		"WakaTime"
+		"SublimeLinter-contrib-eslint"
 	]
 }
