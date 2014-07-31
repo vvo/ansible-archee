@@ -9,3 +9,6 @@
     - "tlp-sleep"
     - "ntpd"
     - "dhcpcd"
+    - "cups"
+    - "cups-browsed"
+    - "avahi-daemon"

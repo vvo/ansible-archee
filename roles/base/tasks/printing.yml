@@ -1,0 +1,12 @@
+---
+- name: "activate hpaio for scanning"
+  lineinfile:
+    dest: "/etc/sane.d/dll.conf"
+    line: "hpaio"
+    state: "present"
+- name: "copy cups configuration file for printers"
+  copy:
+    src: "printers.conf"
+    dest: "/etc/cups/printers.conf"
+    mode: 0644
+    group: "lp"

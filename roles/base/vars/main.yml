@@ -66,8 +66,8 @@ office_packages:
   - "brscan4"
   - "gnome-calculator"
   - "transmission-gtk"
-  - "foxitreader"
   - "geeqie"
+  - "evince"
   - "libreoffice-writer"
   - "todotxt"
 file_manager:
@@ -130,4 +130,8 @@ dev_packages:
   - "sublime-text-nightly"
   - "nodejs"
   - "go"
-  - "git-cola"
+  - "git-cola"printing_packages:
+  - "cups"
+  - "hplip"
+  - "python2-dbus"
+  - "ghostscript"
