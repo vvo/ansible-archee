@@ -8,6 +8,4 @@
     - "tlp"
     - "tlp-sleep"
     - "ntpd"
-    - "systemd-readahead-collect"
-    - "systemd-readahead-replay"
     - "dhcpcd"
