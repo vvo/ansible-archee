@@ -22,7 +22,8 @@
       - "{{office_packages}}"
       - "{{wm_packages}}"
       - "{{dev_packages}}"
-      - "{{file_manager}}"
+      - "{{file_manager_packages}}"
+      - "{{fun_packages}}"
 - include: enable-services.yml
 - include: install-global-npm-packages.yml
 - include: configure-refind.yml

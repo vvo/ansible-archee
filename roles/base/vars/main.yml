@@ -70,7 +70,7 @@ office_packages:
   - "evince"
   - "libreoffice-writer"
   - "todotxt"
-file_manager:
+file_manager_packages:
   - "thunar"
   - "gvfs"
   - "gvfs-smb"
@@ -130,7 +130,12 @@ dev_packages:
   - "sublime-text-nightly"
   - "nodejs"
   - "go"
-  - "git-cola"printing_packages:
+  - "git-cola"
+fun_packages: # @neoziro made me install this
+  - "steam"
+  - "steam-fonts"
+  - "lib32-intel-dri"
+printing_packages:
   - "cups"
   - "hplip"
   - "python2-dbus"
