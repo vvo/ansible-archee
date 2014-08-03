@@ -5,6 +5,7 @@ system_packages:
   - "nethogs"
   - "iotop"
   - "powertop"
+  - "glances"
   - "git"
   - "vim"
   - "sudo"
@@ -128,7 +129,6 @@ fonts_packages:
   - "ttf-envy-code-r"
 dev_packages:
   - "sublime-text-nightly"
-  - "nodejs"
   - "go"
   - "git-cola"
 fun_packages: # @neoziro made me install this
