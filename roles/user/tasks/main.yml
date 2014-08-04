@@ -5,4 +5,5 @@
 - include: copy-files.yml
 - include: copy-private-ssh-key.yml
 - include: configure-spotify.yml
+- include: nvm.yml
 - include: go.yml

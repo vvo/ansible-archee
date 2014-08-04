@@ -1,3 +1,4 @@
 ---
 - name: "update repositories with pacman"
   command: "pacman -Sy"
+  changed_when: false

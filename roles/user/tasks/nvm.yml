@@ -1,0 +1,17 @@
+---
+# check nvm presence
+- shell: "source ~/.nvm/nvm.sh && nvm -v"
+  register: "nvm_presence"
+  sudo: true
+  sudo_user: "{{user_name}}"
+  changed_when: "nvm_presence|failed"
+  ignore_errors: true
+
+- name: "Install nvm and nodejs"
+  shell: "{{item}}"
+  when: "nvm_presence|failed"
+  sudo: true
+  sudo_user: "{{user_name}}"
+  with_items:
+    - "curl https://raw.githubusercontent.com/creationix/nvm/v0.13.0/install.sh | bash"
+    - "source ~/.nvm/nvm.sh && nvm install 0.10 && nvm install 0.11 && nvm alias default 0.10"

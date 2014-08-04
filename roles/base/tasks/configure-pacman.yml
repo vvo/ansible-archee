@@ -26,6 +26,7 @@
     regexp: "Include = /etc/pacman.d/mirrorlist"
 - name: "add infinality-bundle key"
   shell: "pacman-key -r 962DDE58 && pacman-key --lsign-key 962DDE58"
+  changed_when: false
 - name: "add infinality-bundle" # https://wiki.archlinux.org/index.php/Unofficial_user_repositories#infinality-bundle
   lineinfile:
     dest: "/etc/pacman.conf"

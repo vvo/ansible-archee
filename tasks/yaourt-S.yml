@@ -1,10 +1,11 @@
 ---
 - command: pacman -Q {{item}}
-  register: presence
+  register: packages_presence
   with_items: packages
   ignore_errors: yes
+  changed_when: "packages_presence|failed"
 
 - name: install package if necessary
   command: yaourt -S {{item.item}} --noconfirm
   when: item|failed
-  with_items: presence.results
+  with_items: packages_presence.results

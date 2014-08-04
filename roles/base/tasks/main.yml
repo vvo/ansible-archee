@@ -8,9 +8,10 @@
 - include: configure-virtualbox.yml
 - include: install-yaourt.yml
 - include: update-repositories.yml
-- name: find packages from base-devel
+- name: "find packages from base-devel"
   shell: "pacman -Qg base-devel | awk '{print $2}'"
-  register: group_packages
+  register: "group_packages"
+  changed_when: false
 - include: ../../../tasks/yaourt-S.yml
   vars:
     packages:

@@ -3,7 +3,7 @@
   shell: "source ~/.zshenv && go get -u github.com/{{item}}"
   args:
     chdir: "/home/{{user_name}}/"
-  sudo: "yes"
+  sudo: true
   sudo_user: "{{user_name}}"
   with_items:
     - "c9s/gomon"
