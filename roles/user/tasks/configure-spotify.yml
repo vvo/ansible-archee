@@ -4,8 +4,8 @@
   template:
     src: ".config/spotify/{{item}}.j2"
     dest: "/home/{{user_name}}/.config/spotify/{{item}}"
-    owner: "vvo"
-    group: "vvo"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"
   with_items:
     - "prefs"
     - "Users/wouaren-user/prefs"

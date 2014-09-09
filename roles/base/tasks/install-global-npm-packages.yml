@@ -1,8 +1,18 @@
 ---
-# - name: "install some handy npm packages"
-#   npm:
-#     name: "{{item}}"
-#     global: "yes"
-#     state: "present"
-#   with_items:
-#     - "http-server"
+- name: "install some handy npm packages"
+  npm:
+    name: "{{item}}"
+    global: "yes"
+    state: "present"
+    executable: "/home/{{user_name}}/.nvm/current/bin/npm"
+  with_items:
+    - "http-server"
+    - "wifi.sh"
+    - "selenium-standalone"
+    - "phantomjs"
+    - "bower"
+    - "mversion"
+    - "david"
+    - "webkit-devtools-agent"
+    - "gh"
+    - "zuul"

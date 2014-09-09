@@ -41,7 +41,11 @@ system_packages:
   - "ethtool"
   - "smartmontools"
   - "polkit"
+  - "strace"
+  - "dhclient"
 compression_packages:
+  - "xarchiver"
+  - "p7zip"
   - "zip"
   - "unzip"
   - "unrar"
@@ -49,6 +53,7 @@ virtualization_packages:
   - "virtualbox"
   - "virtualbox-ext-oracle"
   - "virtualbox-host-modules"
+  - "virtualbox-guest-iso"
   - "packer-io"
   - "docker"
   - "vagrant"
@@ -71,6 +76,7 @@ office_packages:
   - "evince"
   - "libreoffice-writer"
   - "todotxt"
+  - "jpegoptim"
 file_manager_packages:
   - "thunar"
   - "gvfs"
@@ -131,6 +137,7 @@ dev_packages:
   - "sublime-text-nightly"
   - "go"
   - "git-cola"
+  - "jre8-openjdk-headless"
 fun_packages: # @neoziro made me install this
   - "steam"
   - "steam-fonts"

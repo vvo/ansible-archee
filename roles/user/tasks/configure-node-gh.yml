@@ -1,0 +1,8 @@
+---
+# autologin to spotify and lastfm spotify plugin
+- name: "Copy and fill spotify configuration files (login)"
+  template:
+    src: ".gh.json.j2"
+    dest: "/home/{{user_name}}/.gh.json"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"
