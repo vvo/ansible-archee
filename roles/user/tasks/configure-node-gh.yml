@@ -1,6 +1,5 @@
 ---
-# autologin to spotify and lastfm spotify plugin
-- name: "Copy and fill spotify configuration files (login)"
+- name: "Copy and fill node-gh configuration files"
   template:
     src: ".gh.json.j2"
     dest: "/home/{{user_name}}/.gh.json"
