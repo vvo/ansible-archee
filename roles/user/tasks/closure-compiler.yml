@@ -1,0 +1,20 @@
+---
+- name: "install google closure compiler"
+  git:
+    repo: "https://github.com/google/closure-compiler.git"
+    dest: "/home/{{user_name}}/Programs/closure-compiler"
+    accept_hostkey: "yes"
+  register: "closure_source"
+
+- name: "build closure compiler"
+  shell: "ant clean && ant"
+  args:
+    chdir: "/home/{{user_name}}/Programs/closure-compiler"
+  when: "closure_source|changed"
+
+- file:
+    dest: "/home/{{user_name}}/Programs/closure-compiler"
+    state: "directory"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"
+    recurse: "yes"

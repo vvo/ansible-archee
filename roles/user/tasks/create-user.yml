@@ -13,3 +13,5 @@
     group: "{{user_name}}"
   with_items:
     - "screenshots"
+    - "Dev"
+    - "Programs"

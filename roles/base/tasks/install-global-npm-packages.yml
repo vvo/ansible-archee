@@ -16,3 +16,6 @@
     - "webkit-devtools-agent"
     - "gh"
     - "zuul"
+    - "mocha"
+    - "prova"
+    - "grunt"

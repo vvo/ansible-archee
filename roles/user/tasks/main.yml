@@ -8,3 +8,4 @@
 - include: configure-node-gh.yml
 - include: nvm.yml
 - include: go.yml
+- include: closure-compiler.yml

@@ -43,6 +43,9 @@ system_packages:
   - "polkit"
   - "strace"
   - "dhclient"
+  - "lm_sensors"
+  - "jdk8-openjdk"
+  - "apache-ant"
 compression_packages:
   - "xarchiver"
   - "p7zip"
@@ -137,7 +140,6 @@ dev_packages:
   - "sublime-text-nightly"
   - "go"
   - "git-cola"
-  - "jre8-openjdk-headless"
 fun_packages: # @neoziro made me install this
   - "steam"
   - "steam-fonts"
