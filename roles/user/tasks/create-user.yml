@@ -1,9 +1,17 @@
 ---
+- name: "create required groups"
+  group:
+    name: "{{item}}"
+  with_items:
+    - "vboxusers"
+    - "docker"
 - name: "create user"
   user:
     name: "{{user_name}}"
     password: "{{user_password}}"
-    groups: "vboxusers"
+    groups:
+      - "vboxusers"
+      - "docker"
     shell: "/bin/zsh"
 - name: "create user dirs"
   file:
