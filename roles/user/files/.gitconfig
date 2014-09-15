@@ -39,7 +39,6 @@
   excludesfile = /home/vvo/.gitignore
 [github]
   user = vvo
-  token = c1d063410e03a68cd05a204b11e8c75fb7856a51
 [gui]
   editor = "s --wait"
 [push]

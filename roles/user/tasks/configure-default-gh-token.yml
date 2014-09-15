@@ -1,0 +1,7 @@
+---
+- name: "Configure default github token"
+  template:
+    src: ".netrc.j2"
+    dest: "/home/{{user_name}}/.netrc"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"

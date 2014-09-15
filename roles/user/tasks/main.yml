@@ -9,3 +9,4 @@
 - include: nvm.yml
 - include: go.yml
 - include: closure-compiler.yml
+- include: configure-default-gh-token.yml

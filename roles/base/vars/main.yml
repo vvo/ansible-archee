@@ -140,6 +140,7 @@ dev_packages:
   - "sublime-text-nightly"
   - "go"
   - "git-cola"
+  - "fig"
 fun_packages: # @neoziro made me install this
   - "steam"
   - "steam-fonts"
