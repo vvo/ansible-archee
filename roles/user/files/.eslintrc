@@ -20,7 +20,7 @@
     "no-warning-comments": 2,
     "max-params": [
       2,
-      3
+      5
     ],
     "quotes": [
       2,
@@ -54,16 +54,9 @@
       "always"
     ],
     "space-unary-word-ops": 2,
-    "valid-jsdoc": [
-      2,
-      {
-        "prefer": {
-          "return": "returns"
-        }
-      }
-    ],
+    "valid-jsdoc": 0,
     "strict": 0,
-    "complexity": 10,
+    "complexity": [1, 10],
     "no-mixed-requires": [
       2,
       true
@@ -79,4 +72,4 @@
     "node": true,
     "mocha": true
   }
-}
+}%
