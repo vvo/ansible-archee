@@ -142,6 +142,7 @@ dev_packages:
   - "go"
   - "git-cola"
   - "fig"
+  - "phantomjs"
 fun_packages: # @neoziro made me install this
   - "steam"
   - "steam-fonts"
