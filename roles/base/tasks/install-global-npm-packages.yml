@@ -5,11 +5,14 @@
     global: "yes"
     state: "present"
     executable: "/home/{{user_name}}/.nvm/current/bin/npm"
+  sudo: true
+  sudo_user: "{{user_name}}"
+  environment:
+    PYTHON: "/bin/python2"
   with_items:
     - "http-server"
     - "wifi.sh"
     - "selenium-standalone"
-    - "phantomjs"
     - "bower"
     - "mversion"
     - "david"
@@ -18,7 +21,13 @@
     - "zuul"
     - "mocha"
     - "prova"
-    - "grunt"
+    - "grunt-cli"
     - "browserify"
     - "uglify-js"
     - "duo"
+    - "component"
+    - "watchify"
+    - "localtunnel"
+    - "eslint"
+  tags:
+    - "debug"
