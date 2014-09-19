@@ -46,6 +46,7 @@ system_packages:
   - "lm_sensors"
   - "jdk8-openjdk"
   - "apache-ant"
+  - "fuse-exfat"
 compression_packages:
   - "xarchiver"
   - "p7zip"
