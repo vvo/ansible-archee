@@ -1,16 +1,18 @@
 {
+  "env": {
+    "node": true,
+    "browser": true
+  },
   "rules": {
-    "no-process-exit": 2,
+    "new-cap": 0,
+    "no-process-exit": 0,
     "max-len": [
       2,
-      100,
+      110,
       2
     ],
     "no-new-require": 2,
-    "space-in-brackets": [
-      2,
-      "never"
-    ],
+    "space-in-brackets": 0,
     "wrap-iife": [
       2,
       "outside"
@@ -19,8 +21,8 @@
     "no-unused-expressions": 0,
     "no-warning-comments": 2,
     "max-params": [
-      2,
-      5
+      1,
+      4
     ],
     "quotes": [
       2,
@@ -54,9 +56,16 @@
       "always"
     ],
     "space-unary-word-ops": 2,
-    "valid-jsdoc": 0,
+    "valid-jsdoc": [
+      2,
+      {
+        "prefer": {
+          "return": "returns"
+        }
+      }
+    ],
     "strict": 0,
-    "complexity": [1, 10],
+    "complexity": 10,
     "no-mixed-requires": [
       2,
       true
@@ -67,9 +76,5 @@
       "always"
     ],
     "curly": 0
-  },
-  "env": {
-    "node": true,
-    "mocha": true
   }
-}%
+}

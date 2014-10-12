@@ -45,8 +45,8 @@ system_packages:
   - "dhclient"
   - "lm_sensors"
   - "jdk8-openjdk"
-  - "apache-ant"
   - "fuse-exfat"
+  - "nfs-utils"
 compression_packages:
   - "xarchiver"
   - "p7zip"
@@ -143,12 +143,28 @@ dev_packages:
   - "git-cola"
   - "fig"
   - "phantomjs"
+  - "apache-ant"
+  - "apache-flex-sdk"
+  - "xorg-server-xvfb"
+  - "dnsutils"
+  - "filezilla"
+  - "gtk-recordmydesktop"
+  - "pgadmin3"
 fun_packages: # @neoziro made me install this
   - "steam"
   - "steam-fonts"
   - "lib32-intel-dri"
+  # amazon mp3 download
+  - "clamz"
 printing_packages:
   - "cups"
   - "hplip"
   - "python2-dbus"
   - "ghostscript"
+video_packages:
+  - "gpac"
+  - "ffcast"
+  - "imagemagick"
+  - "gifsicle"
+  - "byzanz"
+  - "pngquant"
