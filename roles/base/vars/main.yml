@@ -154,8 +154,6 @@ fun_packages: # @neoziro made me install this
   - "steam"
   - "steam-fonts"
   - "lib32-intel-dri"
-  # amazon mp3 download
-  - "clamz"
 printing_packages:
   - "cups"
   - "hplip"
