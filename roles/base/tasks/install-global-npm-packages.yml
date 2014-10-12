@@ -29,5 +29,7 @@
     - "watchify"
     - "localtunnel"
     - "eslint"
+    - "testling"
+    - "gulp"
   tags:
     - "debug"
